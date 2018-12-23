@@ -11,10 +11,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate">
     <meta name="keywords" content="iout.io,iout,"> 
-    <meta name="description" content="1.停止所有的container，这样才能够删除其中的images：
-docker stop $(docker ps -a -q)
-如果想要删除所有container的话再加一个指令：
-docker,"> 
+    <meta name="description" content="1.查看容器：使用docker ps查看到该容器信息
+2.连接容器：使用docker attach进入该容器
+$ sudo docker attach 44fc0f0582d9  
+3.停止所有的c,"> 
     <meta name="author" content="Iout.io"> 
     <link rel="alternative" href="atom.xml" title="Iout.io" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -29,7 +29,7 @@ docker,">
     <div class="bar" style="width: 0;"></div>
     <a class="icon-home image-icon" href="javascript:;"></a>
     <div title="播放/暂停" class="icon-play"></div>
-    <h3 class="subtitle">删除Docker容器镜像</h3>
+    <h3 class="subtitle">Docker容器镜像管理命令</h3>
     <div class="social">
         <!--<div class="like-icon">-->
             <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -46,24 +46,29 @@ docker,">
     <div class="section">
         <div class="article">
     <div class="main">
-        <h1 class="title">删除Docker容器镜像</h1>
+        <h1 class="title">Docker容器镜像管理命令</h1>
         <div class="stuff">
             <span>十二月 15, 2018</span>
             
+  <ul class="post-tags-list"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Docker/">Docker</a></li></ul>
+
 
         </div>
         <div class="content markdown">
-            <p>1.停止所有的container，这样才能够删除其中的images：</p>
+            <p>1.查看容器：使用docker ps查看到该容器信息</p>
+<p>2.连接容器：使用docker attach进入该容器</p>
+<p>$ sudo docker attach 44fc0f0582d9  </p>
+<p>3.停止所有的container，这样才能够删除其中的images：</p>
 <p>docker stop $(docker ps -a -q)</p>
-<p>如果想要删除所有container的话再加一个指令：</p>
+<p>4.如果想要删除所有container的话再加一个指令：</p>
 <p>docker rm $(docker ps -a -q)</p>
-<p>2.查看当前有些什么images</p>
+<p>5.查看当前有些什么images</p>
 <p>docker images</p>
-<p>3.删除images，通过image的id来指定删除谁</p>
+<p>6.删除images，通过image的id来指定删除谁</p>
 <p>docker rmi <image id=""></image></p>
-<p>想要删除untagged images，也就是那些id为<none>的image的话可以用</none></p>
+<p>7.想要删除untagged images，也就是那些id为<none>的image的话可以用</none></p>
 <p>docker rmi $(docker images | grep “^<none>“ | awk “{print $3}”)</none></p>
-<p>要删除全部image的话</p>
+<p>8.要删除全部image的话</p>
 <p>docker rmi $(docker images -q)</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
@@ -81,7 +86,7 @@ docker,">
             
         </div>
         
-    <div id="gitalk-container" class="comment link" data-ae="true" data-ci="387adc6203e0537273c2" data-cs="1a2cf8b47eb4031bc12ac90de035e2000b7e59c0" data-r="iout.io" data-o="imocode" data-a="imocode" data-d="false">查看评论</div>
+    <div id="gitalk-container" class="comment link" data-ae="true" data-ci="7a9a2b9baa1eff7f1857" data-cs="cab6d5c6b1c7b4f86681acfa0610b79d4ab4b27c" data-r="iout.io" data-o="imocode" data-a="imocode" data-d="false">查看评论</div>
 
 
     </div>

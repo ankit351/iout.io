@@ -11,7 +11,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate">
     <meta name="keywords" content="iout.io,iout,"> 
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any pr,"> 
+    <meta name="description" content="1.查看容器：使用docker ps查看到该容器信息
+2.连接容器：使用docker attach进入该容器
+$ sudo docker attach 44fc0f0582d9  
+3.停止所有的c,"> 
     <meta name="author" content="Iout.io"> 
     <link rel="alternative" href="atom.xml" title="Iout.io" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -75,7 +78,7 @@
             
         </div>
         
-    <div id="gitalk-container" class="comment link" data-ae="true" data-ci="387adc6203e0537273c2" data-cs="1a2cf8b47eb4031bc12ac90de035e2000b7e59c0" data-r="iout.io" data-o="imocode" data-a="imocode" data-d="false">查看评论</div>
+    <div id="gitalk-container" class="comment link" data-ae="true" data-ci="7a9a2b9baa1eff7f1857" data-cs="cab6d5c6b1c7b4f86681acfa0610b79d4ab4b27c" data-r="iout.io" data-o="imocode" data-a="imocode" data-d="false">查看评论</div>
 
 
     </div>
